@@ -1,0 +1,9 @@
+<html>
+<body>
+  {% with map=googlemap_obj("another-map", latitude1, longitude1, markers=[(latitude1, longitude1, "Source"), (latitude2, longitude2, "Destination")])%}
+    {{map.html}}
+    {{map.js}}
+{% endwith %}
+<a href="doublemarkermap"> Search Again?</a>
+</body>
+</html>
